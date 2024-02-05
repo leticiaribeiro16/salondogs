@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow-principal: #F8AD19;
+    --yellow-secondary: #FECA16;
+    --purple-principal: #B461C8;
+    --purple-secondary: #9B5EAA;
+    --neutral-100: #B5B5B5;
+    --neutral-200: #8C8C8C;
+    --neutral-300: #666666;
+    --neutral-400: #515151;
+    --neutral-500: #3C3C3C;
+    --neutral-600: #1E1E1E;
+}
+
+/* Header */
+
+.navbar{
+    box-shadow: 0px 4px 20px 0px rgba(187, 187, 187, 0.25);
+    font-weight: 500;
+}
+
+/* SERVIÇOS */
+#servicos{
+    margin-top: 2rem;
+}
+
+#servicos h1, #depoimentos h1, #cursos h1{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 58.873px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--neutral-600);
+}
+
+
+#servicos h1 span, #depoimentos h1 span, #cursos h1 span{
+    color: var(--yellow-principal);
+    font-weight: 700;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+  
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+.btn-servico{
+    border-radius: 15px;
+    background: var(--purple-secondary, #9B5EAA);
+    border: 2px solid var(--purple-secondary);
+    display: flex;
+    padding: 24px 121px 23px 131px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+.btn-servico:hover{
+    border: 2px solid var(--purple-secondary);
+    background: none;
+    color: var(--purple-secondary);
+}
+
+.text-dark{
+    text-decoration: none;
+}
+
+/* DEPOIMENTOS */
+
+#depoimentos p{
+    color: #464646;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25.982px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#depoimentos .carousel-indicators > button {
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0.5rem !important;
+    background-color: var(--purple-secondary) !important;
+  }
+  
+  #depoimentos .carousel-indicators > button.active, .carousel-indicators > button:hover{
+    background-color: var(--purple-principal) !important
+  }
+  
+  #depoimentos .carousel-control-prev-icon{
+    background-image: url("/assets/img/chevron-down-left.svg") !important;
+  }
+  
+  #depoimentos .carousel-control-next-icon{
+    background-image: url("/assets/img/chevron-down-right.svg") !important;
+  }
+  
+  #depoimentos .carousel-control-next, .carousel-control-prev{
+    opacity: 1 !important;
+  }
+  
+  #depoimentos .item-comentario > div{
+    border-radius: 1.4rem;
+    box-shadow: 4px 4px 35px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  #depoimentos .item-comentario{
+    padding: 38px;
+  }
+  
+  #depoimentos .comentarios.comentarios-container{
+    max-width: 940px !important;
+    position: relative;
+  }
+  
+  #depoimentos .carousel-inner {
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, #000 5%, #000 95%, transparent 100%);
+  }
+  
+  #depoimentos .comentario-img{
+    max-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (min-width: 768px){
+    #depoimentos .item-comentario > div{
+      height: 344px;
+    }
+  }
+  
+#depoimentos .text{
+    color: var(--neutral-600, #1E1E1E);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* CONTATO */
+
+#contato{
+    background-color: var(--purple-principal);
+    padding: 3rem;
+}
+
+#contato h1{
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 58.873px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* SOBRE */
+
+h1{
+    padding: 2rem;
+    text-align: center;
+    font-size: 58px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--neutral-600);
+}
+
+span{
+    color: var(--yellow-principal);
+    font-weight: 700;
+}
+
+.container .right{
+    float: right;
+}
+
+.container .left{
+    float: left;
+}
+
+.container p{
+    color: var(--neutral-600, #1E1E1E);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.container{
+    margin-top: 4rem;
+}
+
+.btn-primary{
+    background: var(--purple-secondary) !important;
+    border: none !important;
+}
+
+/* PREMIACOES */
+
+h5{
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background: var(--purple-secondary);
+    padding: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-logo{
+    width: 15rem;
+}
+
+/* DETALHE PRODUTO */
+
+.btn-agendar{
+    background: var(--yellow-principal, #F8AD19);
+    border-radius: 15px;
+    border: 2px solid var(--yellow-principal);
+    display: flex;
+    width: 160px;
+    padding: 24px 121px 23px 131px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.btn-agendar:hover{
+    border: 2px solid var(--yellow-principal);
+    background: none;
+    color: var(--yellow-principal);
+}
+
+.detalhe-produto h2{
+    padding-top: 1rem;
+    color: var(--yellow-principal);
+    font-weight: 700;
+}
+
+.detalhe-produto small{
+    color: var(--neutral-300);
+}
+
+.detalhe-produto{
+    margin-bottom: 2rem;
+}
